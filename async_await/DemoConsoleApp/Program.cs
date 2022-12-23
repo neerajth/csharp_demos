@@ -19,7 +19,7 @@ namespace TestingCSharp
             await dryClothes(ret);
             await ironClothes();
 
-            /* Asynchronous calls */
+            /* Asynchronous calls. Remove the await keyword. Run all the following method asynchronously using Task.WhenAll method. Task.WhenAll ensures that the END string LOC is executed at the end of all methods. Removing await ensures that all of the following methods are executed at the same time.*/
             Task t2 = payUtilityBill();
             Task t3 = shoppingGroceries();
             Task t4 = cleaning();
