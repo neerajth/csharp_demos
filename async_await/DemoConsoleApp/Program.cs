@@ -19,7 +19,6 @@ namespace TestingCSharp
             await dryClothes(ret);
             await ironClothes();
 
-
             /* Asynchronous calls */
             Task t2 = payUtilityBill();
             Task t3 = shoppingGroceries();
