@@ -13,10 +13,14 @@ namespace TestingCSharp
         static async Task Main()
         {
             ConsoleWriteLine(" START");    
+            
+            /* Synchronous calls */
             String ret = await washClothes();            
             await dryClothes(ret);
             await ironClothes();
-            
+
+
+            /* Asynchronous calls */
             Task t2 = payUtilityBill();
             Task t3 = shoppingGroceries();
             Task t4 = cleaning();
